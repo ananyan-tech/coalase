@@ -1,0 +1,68 @@
+fileVersion: 1
+id: 44a3594c-af2c-415f-a4f0-c401a541b53f
+name: STG_PRODUCTS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b0eaa0c5-a44d-44bb-940b-5d14a3c2956d
+          stepCounter: 44a3594c-af2c-415f-a4f0-c401a541b53f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PROD_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 616ad3c2-1d27-4742-b9aa-d379dcff576b
+                stepCounter: 39b3ba35-1392-413d-b97d-83e86dcf9c69
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d766ebef-3666-4afd-8753-1b3854b7143b
+          stepCounter: 44a3594c-af2c-415f-a4f0-c401a541b53f
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: PROD_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 682c5601-1e55-4062-b2d0-d79b0899af03
+                stepCounter: 39b3ba35-1392-413d-b97d-83e86dcf9c69
+            transform: TRIM(prod_name)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          RAW_PRODUCTS: 39b3ba35-1392-413d-b97d-83e86dcf9c69
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK
+            nodeName: RAW_PRODUCTS
+        join:
+          joinCondition: FROM {{ ref('WORK', 'RAW_PRODUCTS') }} "RAW_PRODUCTS"
+        name: STG_PRODUCTS
+        noLinkRefs: []
+  name: STG_PRODUCTS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

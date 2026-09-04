@@ -1,0 +1,237 @@
+fileVersion: 1
+id: b0aa1761-8fac-43b3-ac3d-b47d3ff29ee8
+name: FCT_ORDERS
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: WORK
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f8738bce-db84-458b-ae60-a047139d0569
+          stepCounter: b0aa1761-8fac-43b3-ac3d-b47d3ff29ee8
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: DIM_CUSTOMERS_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b4a2230f-257a-4ac4-bd4d-a7918420337f
+                stepCounter: 6d17204d-3ed5-431d-b88b-ab770d6c61fc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b481e581-9961-4d70-a75f-48ab680e8cc9
+          stepCounter: b0aa1761-8fac-43b3-ac3d-b47d3ff29ee8
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: CUST_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 346b0f22-f461-48e7-9487-0a1bd146906d
+                stepCounter: 6d17204d-3ed5-431d-b88b-ab770d6c61fc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba387619-4681-4c15-b3cc-d88673cc44b2
+          stepCounter: b0aa1761-8fac-43b3-ac3d-b47d3ff29ee8
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: PHONE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a119ab58-2f23-439f-8dd8-99b36d1992e8
+                stepCounter: 6d17204d-3ed5-431d-b88b-ab770d6c61fc
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76420b23-849e-4291-81fb-f6396e82ddc6
+          stepCounter: b0aa1761-8fac-43b3-ac3d-b47d3ff29ee8
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ORDER_ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 123683a6-7168-48da-afa2-a42d44314ef4
+                stepCounter: 0fff9cd1-af51-4061-980d-cdc48fcf4e3d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57c7971a-dec4-4601-b575-e373faee6145
+          stepCounter: b0aa1761-8fac-43b3-ac3d-b47d3ff29ee8
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CUST_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 46541e09-63c2-4072-b30d-c40547948aa4
+                stepCounter: 0fff9cd1-af51-4061-980d-cdc48fcf4e3d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b55c2877-5878-440a-9dec-ecf661677e14
+          stepCounter: b0aa1761-8fac-43b3-ac3d-b47d3ff29ee8
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: PROD_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 051302d2-dd14-46de-b489-87f0891d6c8f
+                stepCounter: 0fff9cd1-af51-4061-980d-cdc48fcf4e3d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 88e6712b-a4f6-4baa-be18-bf94a9bb93bd
+          stepCounter: b0aa1761-8fac-43b3-ac3d-b47d3ff29ee8
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: UNIT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: af47c794-4209-4223-b470-2b0a78c397e7
+                stepCounter: 0fff9cd1-af51-4061-980d-cdc48fcf4e3d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0c1c78aa-a630-4a15-a11a-d58bd79e03c2
+          stepCounter: b0aa1761-8fac-43b3-ac3d-b47d3ff29ee8
+        config: {}
+        dataType: NUMBER(10,2)
+        description: ""
+        name: COST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 41c4d65c-bded-409a-b6f0-35f8f0f4ec0f
+                stepCounter: 0fff9cd1-af51-4061-980d-cdc48fcf4e3d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26fc5513-5d64-4e07-a64a-777537bbc8c7
+          stepCounter: b0aa1761-8fac-43b3-ac3d-b47d3ff29ee8
+        config: {}
+        dataType: TIMESTAMP_NTZ
+        description: ""
+        name: LOAD_TIMESTAMP
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0d7e0afd-547c-4380-ac3d-5318bd682cfe
+                stepCounter: 0fff9cd1-af51-4061-980d-cdc48fcf4e3d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a8141f58-d36d-4714-b4d4-8306e1043908
+          stepCounter: b0aa1761-8fac-43b3-ac3d-b47d3ff29ee8
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: DIM_PRODUCTS_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f5c2d057-4b1f-4270-8572-aad11a027fa5
+                stepCounter: 0203db1e-b2a6-4f81-a293-78f34c950c63
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3812651-0145-4691-9091-c8a8f1282f47
+          stepCounter: b0aa1761-8fac-43b3-ac3d-b47d3ff29ee8
+        config: {}
+        dataType: VARCHAR(100)
+        description: ""
+        name: PROD_NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 53a993a2-ce01-430d-89b6-21334c6f026e
+                stepCounter: 0203db1e-b2a6-4f81-a293-78f34c950c63
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 530d5365-007d-47df-8461-1dfb4ff30d0d
+          stepCounter: b0aa1761-8fac-43b3-ac3d-b47d3ff29ee8
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 41aba814-6763-4255-9dc7-2cb261eafe0b
+          stepCounter: b0aa1761-8fac-43b3-ac3d-b47d3ff29ee8
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          DIM_CUSTOMERS: 6d17204d-3ed5-431d-b88b-ab770d6c61fc
+          DIM_PRODUCTS: 0203db1e-b2a6-4f81-a293-78f34c950c63
+          STG_ORDERS: 0fff9cd1-af51-4061-980d-cdc48fcf4e3d
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WORK
+            nodeName: DIM_CUSTOMERS
+          - locationName: WORK
+            nodeName: DIM_PRODUCTS
+          - locationName: WORK
+            nodeName: STG_ORDERS
+        join:
+          joinCondition: |-
+            FROM {{ ref('WORK', 'DIM_CUSTOMERS') }} "DIM_CUSTOMERS"
+            INNER JOIN {{ ref('WORK', 'STG_ORDERS') }} "STG_ORDERS"
+            ON "DIM_CUSTOMERS"."CUST_ID" = "STG_ORDERS"."CUST_ID"
+            LEFT JOIN {{ ref('WORK', 'DIM_PRODUCTS') }} "DIM_PRODUCTS"
+            ON "STG_ORDERS"."PROD_ID" = "DIM_PRODUCTS"."PROD_ID"
+        name: FCT_ORDERS
+        noLinkRefs: []
+  name: FCT_ORDERS
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node
